@@ -4,6 +4,7 @@ import { ScanLine, Activity, Database, Zap } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { UploadCard } from "@/components/UploadCard";
 import { LogsTable } from "@/components/LogsTable";
+import { UserMenu } from "@/components/UserMenu";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -53,9 +54,12 @@ function Index() {
               <p className="text-xs text-muted-foreground">ANPR Operations Console</p>
             </div>
           </div>
-          <div className="hidden items-center gap-2 rounded-full border bg-card px-3 py-1.5 text-xs font-medium text-success md:flex">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-success" />
-            System online
+          <div className="flex items-center gap-3">
+            <div className="hidden items-center gap-2 rounded-full border bg-card px-3 py-1.5 text-xs font-medium text-success md:flex">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-success" />
+              System online
+            </div>
+            <UserMenu />
           </div>
         </div>
       </header>
