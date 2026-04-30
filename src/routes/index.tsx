@@ -92,7 +92,7 @@ function Index() {
         </section>
 
         <footer className="mt-10 text-center text-xs text-muted-foreground">
-          PlateVision · Powered by AI vision recognition
+          PlateVision · Powered by netsture.com
         </footer>
       </main>
     </div>
